@@ -6,8 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Task</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="main_re"></div>
+    <form action="#" id="birichi" method="POST">
+      <input
+        type="search"
+        name="qidir"
+        id="qidir"
+        placeholder="Qidir bu saytdan.... "
+      />
+      <button type="submit">Search</button><br /><br />
+      <input type="range" min="0" max="15" step="any" id="range" />
+      <label for="range" class="range_label">Give mark for searching</label
+      ><br />
+    </form>
+    <br />
+    <form action="#" method="GET" class="main_form">
+      <h1>Register List</h1>
+      <label for="ism">Name</label><br />
+      <input
+        type="text"
+        min="3"
+        max="24"
+        required
+        placeholder="Sanjarbek"
+        name="ism"
+        id="ism"
+        class="input_filout_space"
+      />
+      <br />
+      <br />
+      <label for="familiya">Last name</label><br />
+      <input
+        type="text"
+        min="3"
+        max="24"
+        required
+        placeholder="Raximberdiyev"
+        name="familiya"
+        id="familiya"
+        class="input_filout_space"
+      />
+      <br /><br />
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        required
+        placeholder="raximberdiyevsanjarbek@gamil.com"
+        name="email"
+        id="email"
+        class="input_filout_space"
+      /><br /><br />
+      <label for="tel">Telefon munber (94-236-97-65)</label><br />
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        placeholder="94-236-97-65"
+        required
+        size="9"
+        id="tel"
+      /><br /><br />
+      <label for="birthdate">Choose date birthday</label><br />
+      <input type="date" name="birthdate" id="birthdate" required /><br /><br />
+      <label for="jobs">Social status</label>
+      <select name="jobs" id="jobs">
+        <option value="1">worker</option>
+        <option value="2">jobless</option>
+        <option value="3" selected>student</option>
+        <option value="4">teacher</option>
+        <option value="5">doctor</option></select
+      ><br /><br />
+      <label for="number">Experience</label><br />
+      <input type="number" id="number" step="2" minn="1" max="10" /><br /><br />
+      <div>
+        <label for="status">Family status</label><br />
+        <label for="married">Married</label>
+        <input type="radio" name="status" id="married" /><br />
+        <label for="unmarried">Unmarried</label>
+        <input type="radio" name="status" id="unmarried" />
+      </div>
+      <br />
+      <div>
+        Gender <br />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="famale">Famale</label>
+        <input type="radio" name="gender" id="famale" />
+      </div>
+      <br />
+      <label>Here upload photo</label><br />
+      <input type="file" name="photo" id="photo" /><br /><br />
+      <input type="checkbox" name="remember" id="remember" />
+      <label for="remember">Remember me</label><br /><br />
+      <div class="last_btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      <br />
+    </form>
   </body>
 </html>
