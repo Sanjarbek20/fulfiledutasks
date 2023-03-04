@@ -1,0 +1,23 @@
+body {
+  background-color: blue;
+  color: antiquewhite;
+}
+.main-nav {
+  list-style: none;
+  text-underline-offset: none;
+}
+.form1 {
+  background-color: antiquewhite;
+  color: brown;
+  position: relative;
+  margin: 4px 500px;
+}
+.form1 input,
+select,
+button {
+  margin: 2px 20px;
+  transform: 1px;
+}
+label {
+  margin: 2px 15px;
+}
