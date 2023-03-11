@@ -7,7 +7,7 @@
 .adjacent div + p {
   color: blue;
 }
-.general div ~ p {
+.general ~ p {
   color: orange;
 }
 /* starting combined selectors */
