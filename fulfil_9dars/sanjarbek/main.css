@@ -61,7 +61,6 @@ header:hover {
 }
 /* starting footer field */
 footer {
-	display: block;
 	width: auto;
 	height: 120px;
 	background-color: darkslategrey;
