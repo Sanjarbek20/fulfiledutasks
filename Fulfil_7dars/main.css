@@ -1,25 +1,27 @@
+/** @format */
+
 .descendant p {
-  color: yellow;
+	color: yellow;
 }
 .child > p {
-  color: red;
+	color: red;
 }
 .adjacent div + p {
-  color: blue;
+	color: blue;
 }
 .general ~ p {
-  color: orange;
+	color: orange;
 }
 /* starting combined selectors */
 ul {
-  color: aqua;
+	color: aqua;
 }
 li.selected {
-  color: red;
+	color: red;
 }
 input {
-  background-color: blueviolet;
+	background-color: blueviolet;
 }
 input[type="text"] {
-  background-color: brown;
+	background-color: brown;
 }

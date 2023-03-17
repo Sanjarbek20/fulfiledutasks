@@ -1,9 +1,9 @@
-/*
- *
- * @format
- */
+/** @format */
+
 body {
-	max-height: max-content;
+	margin: 0%;
+	height: 100%;
+	width: 100%;
 }
 header {
 	width: auto;
@@ -27,6 +27,7 @@ header:hover {
 	gap: 25px;
 }
 .foat {
+	padding-left: 10px;
 	width: 200px;
 	background-color: #ffffff;
 	float: left;
