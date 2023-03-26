@@ -1,0 +1,125 @@
+/** @format */
+body {
+	margin: 0%;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to bottom right, aqua, rgb(26, 87, 108));
+	/* background: url(./imgs/computer.jpg); */
+	background-size: cover;
+	color: black;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul {
+	margin: 2em 12em;
+	display: flex;
+	gap: 50px;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.top-header-icon {
+	margin: 0%;
+}
+
+.top-header-icon img {
+	width: 40px;
+	height: 40px;
+}
+.top-header-icon span {
+	display: inline-block;
+	font-size: xx-large;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+ul li:hover {
+	border-bottom: 3px solid #fff;
+	color: #ffff;
+	font-weight: 700;
+	transition: all 2s ease;
+}
+/* starting langs */
+.langs {
+	position: relative;
+	float: left;
+	display: block;
+	width: 8rem;
+	height: 3rem;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(89, 213, 241);
+}
+
+.mooon-btn {
+	position: relative;
+	float: right;
+	display: block;
+	border-radius: 5px;
+	margin-left: 15px;
+	padding-left: 2px;
+	height: 3rem;
+	width: 3rem;
+	background-color: rgb(89, 213, 241);
+}
+.mooon-btn img {
+	/* background-color: #000; */
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+}
+.registr {
+	width: 12rem;
+	height: 3rem;
+	justify-items: center;
+	background-color: #000000;
+	color: #ffff;
+	font-size: larger;
+	border-radius: 5px;
+}
+.registr:hover {
+	background-color: #fff;
+	color: black;
+}
+.right-mini-banner {
+	position: relative;
+	left: 23rem;
+}
+.right-mini-banner img {
+	width: 250px;
+	height: 250px;
+}
+.banner {
+	display: flex;
+	margin: 10rem 2rem;
+}
+@media screen and (max-width: 600px) {
+	ul {
+		display: none;
+	}
+
+	.top-header-icon {
+		position: fixed;
+		top: 1rem;
+		left: 3.5rem;
+	}
+	.right-menu-lang-night {
+		margin: 12px auto;
+		position: sticky;
+		left: 20rem;
+		top: 2px;
+	}
+	.banner {
+		position: fixed;
+		width: 100vw;
+		top: 3rem;
+		left: 1.5rem;
+		font-weight: bold;
+		font-size: medium;
+	}
+}
