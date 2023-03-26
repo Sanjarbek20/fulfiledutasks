@@ -91,4 +91,19 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	top: 3rem;
+	animation-name: bosh;
+	animation-duration: 5s;
+	animation-play-state: paused;
+}
+@keyframes bosh {
+	from {
+		font-weight: 900;
+		background-color: aqua;
+	}
+	to {
+		color: blue;
+		/* background-color: cadetblue; */
+		background-color: black;
+		font-weight: lighter;
+	}
 }
