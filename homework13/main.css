@@ -11,13 +11,13 @@ h1 {
 	position: relative;
 	color: indigo;
 	top: 2rem;
-	left: 3rem;
+	left: 5rem;
 }
 h1 span {
 	color: blue;
 }
 .main-part-section {
-	position: absolute;
+	position: relative;
 	top: 5rem;
 	left: 8%;
 	margin: 3rem;
@@ -49,7 +49,7 @@ ul {
 	justify-content: center;
 	/* justify-items: center; */
 	border-radius: 20px;
-	opacity: 1.5;
+	opacity: 1.2;
 }
 a {
 	text-decoration: none;
@@ -95,15 +95,38 @@ a {
 	animation-duration: 5s;
 	animation-play-state: paused;
 }
-@keyframes bosh {
-	from {
-		font-weight: 900;
-		background-color: aqua;
+ul i {
+	display: none;
+}
+.box-1 {
+	margin-top: 5rem;
+	display: flex;
+	width: 20rem;
+	height: 20rem;
+	background-color: aqua;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background-color: green;
 	}
-	to {
-		color: blue;
-		/* background-color: cadetblue; */
-		background-color: black;
-		font-weight: lighter;
+	ul li {
+		display: none;
+	}
+	ul i {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		right: 2rem;
+		display: inline-block;
+	}
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background-color: blue;
+		gap: 20px;
+		width: 1rem;
+		height: 2rem;
+		margin-left: 2rem;
 	}
 }
