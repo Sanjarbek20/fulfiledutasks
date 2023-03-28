@@ -1,0 +1,53 @@
+/** @format */
+body {
+	margin: 0%;
+	padding: 0%;
+}
+.mover-box {
+	position: absolute;
+	top: 5rem;
+	left: 5rem;
+	width: 20rem;
+	height: 15rem;
+	padding-top: 7rem;
+	text-align: center;
+	background-color: green;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	vertical-align: middle;
+	animation: mover-activity 10s linear 3;
+}
+@keyframes mover-activity {
+	0% {
+		background-color: yellow;
+		top: 5rem;
+		left: 10rem;
+		/* font-size: 12px; */
+	}
+	25% {
+		background-color: aqua;
+		top: 5rem;
+		left: 20rem;
+		/* color: #000; */
+		/* border-radius: 50%; */
+	}
+	50% {
+		background-color: blue;
+		top: 20rem;
+		left: 20rem;
+	}
+	75% {
+		background-color: grey;
+		top: 20rem;
+		left: 10rem;
+		/* transform: scale(1.5); */
+	}
+	100% {
+		background-color: burlywood;
+		top: 5rem;
+		left: 10rem;
+		font-weight: 800;
+	}
+}
