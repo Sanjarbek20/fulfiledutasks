@@ -72,8 +72,13 @@ a {
 	color: rgb(65, 122, 220);
 	transition: all 3s ease-in-out;
 }
+
 .mini-info-fa-registr:hover .katta-sign {
 	background-color: rgb(65, 122, 220);
+	transform: rotate(90deg);
+	color: #fff;
+	transition: all 3s;
+	opacity: 0.8;
 }
 .mini-info-fa-registr:hover a {
 	color: darkgray;
@@ -100,11 +105,15 @@ ul i {
 }
 .box-1 {
 	margin-top: 5rem;
-	display: flex;
+	display: relative;
 	width: 20rem;
 	height: 20rem;
 	margin-bottom: 2rem;
 	background-color: aqua;
+	animation: idea_animation 2s infinite;
+}
+.wrapper {
+	display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -123,7 +132,7 @@ ul i {
 	}
 	.wrapper {
 		display: grid;
-		grid-template-columns: repeat(2, 2fr);
+		grid-template-columns: repeat(2, 3fr);
 		/* background-color: blue; */
 		gap: 20px;
 		width: 1rem;
@@ -131,5 +140,36 @@ ul i {
 		margin-left: 2rem;
 		padding: 2rem;
 		position: absolute;
+	}
+
+	.box-1 {
+		background: linear-gradient(to right bottom, green, blue, aqua);
+		background: linear-gradient(to left bottom, green, blue, aqua, yellow);
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		opacity: 0.5;
+		animation: idea_animation 2s infinite;
+	}
+	.box-1 > p {
+		text-transform: uppercase;
+		font-size: larger;
+		font-weight: 600;
+		color: black;
+	}
+}
+@keyframes idea_animation {
+	0% {
+		transform: translate(90deg);
+		background-color: #fff;
+	}
+	25% {
+		transform: translate(180deg);
+	}
+	50% {
+		transform: translate(270deg);
+	}
+	100% {
+		transform: translate(360deg);
 	}
 }
