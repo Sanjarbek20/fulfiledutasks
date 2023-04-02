@@ -24,14 +24,15 @@ body {
 		background-color: yellow;
 		top: 5rem;
 		left: 10rem;
-		/* font-size: 12px; */
+		font-size: 12px;
+		font-weight: 300;
 	}
 	25% {
 		background-color: aqua;
 		top: 5rem;
 		left: 20rem;
-		/* color: #000; */
-		/* border-radius: 50%; */
+		color: #000;
+		border-radius: 50%;
 	}
 	50% {
 		background-color: blue;
@@ -42,7 +43,7 @@ body {
 		background-color: grey;
 		top: 20rem;
 		left: 10rem;
-		/* transform: scale(1.5); */
+		transform: scale(1.5);
 	}
 	100% {
 		background-color: burlywood;

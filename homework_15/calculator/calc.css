@@ -1,0 +1,70 @@
+/** @format */
+
+* {
+	margin: 0%;
+	padding: 0%;
+}
+/* Starting main style */
+main {
+	position: absolute;
+	width: 50vw;
+	height: 50vw;
+	background-color: aqua;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	/* align-content: center; */
+}
+.container-background-div {
+	background-color: black;
+	padding: 5px;
+	width: 17rem;
+	height: 18rem;
+}
+
+/* .number-items, */
+.numbers-and-belgilar {
+	display: grid;
+	grid-template-columns: max-content repeat();
+}
+
+.number-items {
+	align-content: flex-start;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+/* .belgilar {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+} */
+
+.item {
+	text-align: center;
+	padding-top: 10px;
+	font-size: larger;
+	width: 50px;
+	height: 40px;
+	margin: 0.1rem;
+	background-color: rgb(61, 59, 59);
+	color: #fff;
+}
+
+.belgilar div:first-child {
+	background-color: aqua;
+	width: 103px;
+	grid-row: 6;
+}
+.belgilar div:last-child {
+	background-color: red;
+	width: 103px;
+}
+input {
+	padding: 1px;
+	width: 100%;
+	border-radius: 5px;
+	border: 0;
+	height: 2rem;
+	margin: 5px 0;
+	text-align: end;
+}
