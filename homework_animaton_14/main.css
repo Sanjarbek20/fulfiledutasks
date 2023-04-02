@@ -22,13 +22,16 @@
 	background-color: #000;
 }
 .box-loader-part-1 {
-	animation: bir 1.01s linear infinite;
+	animation: bir 1s linear infinite;
+	animation-delay: -0.2s;
 }
 .box-loader-part-2 {
-	animation: ikki 1.2s linear infinite;
+	animation: ikki 1s linear infinite;
+	animation-delay: -0.1s;
 }
 .box-loader-part-3 {
-	animation: uchinchi 1.3s linear infinite;
+	animation: uchinchi 1s linear infinite;
+	animation-delay: 0s;
 }
 
 @keyframes bir {
