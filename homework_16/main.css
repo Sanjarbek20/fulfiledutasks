@@ -1,0 +1,62 @@
+/** @format */
+body {
+	width: 100%;
+	height: 1000px;
+}
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+	border: 1px solid red;
+	display: block;
+}
+header,
+nav,
+footer {
+	height: 6vw;
+	background-color: grey;
+	margin: 5px;
+	text-align: center;
+}
+
+.left_aside,
+.right_aside {
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	width: 25%;
+	height: 20vw;
+	background-color: grey;
+}
+
+.right_aside {
+	float: right;
+}
+.left_aside {
+	float: left;
+}
+
+.wrapper_main {
+	display: flex;
+	justify-content: space-between;
+}
+main {
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	width: 50vw;
+	height: 20vw;
+	background-color: grey;
+}
+
+span {
+	display: inline-block;
+	position: relative;
+	top: 40%;
+}
