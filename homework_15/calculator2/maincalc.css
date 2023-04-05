@@ -1,0 +1,81 @@
+/** @format */
+.first__section__calculator {
+	margin: auto;
+	padding: 3px;
+	background-color: black;
+	width: max-content;
+	/* position: relative;
+	top: 2rem;
+	left: 1rem; */
+}
+
+input {
+	width: 7rem;
+	height: 2rem;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	text-align: right;
+	width: 8rem;
+}
+
+input:active {
+	border-color: black;
+}
+.numbers__and__belgilar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.number__items {
+	display: flex;
+	align-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap-reverse;
+	flex-direction: row;
+	width: 6.2rem;
+	margin-right: 0%;
+	gap: 1px;
+}
+
+.chozish {
+	flex-basis: 4.05rem;
+}
+
+.number__items div:nth-child(12) {
+	background-color: red;
+}
+
+.arf__items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: 0%;
+	gap: 1px;
+}
+
+.arf__items div:last-child {
+	flex-grow: 2;
+	line-height: 4rem;
+	background-color: blue;
+}
+
+.item {
+	padding: 0;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	font-weight: bold;
+	background-color: slategrey;
+	cursor: pointer;
+}
+
+.item:hover,
+.item:active {
+	background-color: #2525;
+	color: #fff;
+	font-weight: 700;
+}
+
+/*  */
