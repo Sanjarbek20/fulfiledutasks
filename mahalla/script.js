@@ -244,7 +244,7 @@ for (let i = 0; i <= Numbers.length; i++) {
 
 // console.log(aloneNumber); // Output: 1
 
-/* function convertNumberToWord(numberString) {
+function convertNumberToWord(numberString) {
 	const numberWords = {
 		0: "zero",
 		1: "one",
@@ -272,5 +272,5 @@ for (let i = 0; i <= Numbers.length; i++) {
 
 	return wordString.trim();
 }
-
-console.log(convertNumberToWord("My age is two")); */
+const text = fdgdgfgdfgdfgdfgd;
+console.log(convertNumberToWord("My age is 34 sdhfgsdhfgdsfg 45 hsdhs 4"));

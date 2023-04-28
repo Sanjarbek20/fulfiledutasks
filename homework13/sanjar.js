@@ -39,47 +39,33 @@
 		9: "nine",
 	};
 
-	let wordString = "";
+*/
 
-	for (let i = 0; i < numberString.length; i++) {
-		const currentChar = numberString[i];
+// 5-masala
+/* 
+function MaxArray(n) {
+	var arr1 = [4, 4, 4, 4];
 
-		if (/\d/.test(currentChar)) {
-			wordString += numberWords[currentChar] + " ";
+	var maxElement = arr1[0];
+	var minElement = arr1[0];
+
+	for (let x = 0; x <= arr1.length; x++) {
+		if (arr1[x] < minElement) {
+			minElement = arr1[x];
+
+			// console.log("max element:", arr1[x + 1]);
+		} else if (arr1[x] > maxElement) {
+			maxElement = arr1[x];
 		} else {
-			wordString += currentChar;
+			console.log("Hamma elemntlar teng:");
+			break;
 		}
 	}
-
-	return wordString.trim();
+	console.log("min element:", minElement);
+	console.log("max element:", maxElement);
 }
-
-console.log(convertNumberToWord("My age is two")); */
+MaxArray(1); */
 
 //
 
 // To'plamdan yolg'iz sonni topish
-function findAloneNumber(arr) {
-	const counts = {};
-
-	// Loop through array and count occurrences of each number
-	for (let i = 0; i < arr.length; i++) {
-		const currentNumber = arr[i];
-		counts[currentNumber] = (counts[currentNumber] || 0) + 1;
-	}
-
-	// Find the number that occurs only once
-	for (const [numberStr, count] of Object.entries(counts)) {
-		const number = parseInt(numberStr);
-		if (count === 1) {
-			return number;
-		}
-	}
-
-	return null; // no number found that occurs only once
-}
-
-const input = [4, 3, 2, 5, 2, 3, 8, 5, 4];
-const aloneNumber = findAloneNumber(input);
-
-console.log(aloneNumber);
