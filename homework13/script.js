@@ -143,27 +143,18 @@ evenNumber(n); */
 // 3-masala:
 
 // var n = +prompt("N kiriting:");
-// function Qoldiqsiz(n) {
-// 	/* numbers = 1225;
+function Qoldiqsiz(n) {
+	var soni = 0;
 
-// 	for (let i = 0; i < n; i++) {
-// 		if (numbers % 1225 === 0) {
-// 			console.log(numbers);
-// 			numbers += 1225;
-// 		}
-// 	} */
-// 	/* soni = 0;
-// 	raqamlar = 1225;
-
-// 	while (soni < n)
-// 		if (raqamlar % 1225 === 0) {
-// 			console.log(raqamlar);
-// 			raqamlar += 1225;
-// 			soni++;
-// 		} */
-// }
-
-// Qoldiqsiz(4);
+	for (let j = 1225; j <= 10000; j += 1225) {
+		if (j % 1225 === 0) {
+			console.log(j);
+			soni++;
+		}
+	}
+	console.log("1225 ga bo'lidadigan sonlar: ", soni);
+}
+Qoldiqsiz(3);
 
 // 4-masala:
 
@@ -180,97 +171,29 @@ function UchburchakNumber(number) {
 UchburchakNumber(number); */
 
 // 5-masala
-/* 
-function MaxArray(n) {
-	var arr1 = [4, 4, 4, 4];
 
-	var maxElement = arr1[0];
-	var minElement = arr1[0];
+// function MaxArray(n) {
+/* var arr1 = [45, 21, 4, 78];
 
-	for (let x = 0; x <= arr1.length; x++) {
-		if (arr1[x] < minElement) {
-			minElement = arr1[x];
+var maxElement = arr1[0];
+var minElement = arr1[0];
 
-			// console.log("max element:", arr1[x + 1]);
-		} else if (arr1[x] > maxElement) {
-			maxElement = arr1[x];
-		} else {
-			console.log("Hamma elemntlar teng:");
-			break;
-		}
+for (let x = 0; x <= arr1.length; x++) {
+	if (arr1[x] < minElement) {
+		minElement = arr1[x];
+
+		// console.log("max element:", arr1[x + 1]);
+	} else if (arr1[x] > maxElement) {
+		maxElement = arr1[x];
+		// } else {
+		// 	// console.log("Hamma elemntlar teng:");
 	}
-	console.log("min element:", minElement);
-	console.log("max element:", maxElement);
 }
-MaxArray(1); */
+console.log("min element:", minElement);
+console.log("min element:", maxElement);
+ */
+// MaxArray(n);
 
-// 6--masala
-// sizga Butun sonlardan toplam berlingan shulardan yagona yolg'ozoni toping
-/* 
-var Numbers = [4, 3, 2, 1, 2, 3, 4];
-var firstIndex = Numbers[0];
-for (let i = 0; i <= Numbers.length; i++) {
-	if (firstIndex === Numbers[i]) {
-		firstIndex = Numbers[i + 1];
-		console.log(firstIndex);
-		continue;
-	}
-	// else {
-	// 	console.log(Numbers[i]);
-	// }
-} */
-// function findAloneNumber(arr) {
-// 	const counts = {};
-
-// 	// Loop through array and count occurrences of each number
-// 	for (let i = 0; i < arr.length; i++) {
-// 		const currentNumber = arr[i];
-// 		counts[currentNumber] = (counts[currentNumber] || 0) + 1;
-// 	}
-
-// 	// Find the number that occurs only once
-// 	for (const [numberStr, count] of Object.entries(counts)) {
-// 		const number = parseInt(numberStr);
-// 		if (count === 1) {
-// 			return number;
-// 		}
-// 	}
-
-// 	return null; // no number found that occurs only once
-// }
-
-// const input = [4, 3, 2, 1, 2, 3, 4];
-// const aloneNumber = findAloneNumber(input);
-
-// console.log(aloneNumber); // Output: 1
-
-/* function convertNumberToWord(numberString) {
-	const numberWords = {
-		0: "zero",
-		1: "one",
-		2: "two",
-		3: "three",
-		4: "four",
-		5: "five",
-		6: "six",
-		7: "seven",
-		8: "eight",
-		9: "nine",
-	};
-
-	let wordString = "";
-
-	for (let i = 0; i < numberString.length; i++) {
-		const currentChar = numberString[i];
-
-		if (/\d/.test(currentChar)) {
-			wordString += numberWords[currentChar] + " ";
-		} else {
-			wordString += currentChar;
-		}
-	}
-
-	return wordString.trim();
-}
-
-console.log(convertNumberToWord("My age is two")); */
+/* function numberToWord(number) {}
+numberToWord(number);
+ */
