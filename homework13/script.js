@@ -143,7 +143,7 @@ evenNumber(n); */
 // 3-masala:
 
 // var n = +prompt("N kiriting:");
-function Qoldiqsiz(n) {
+/* function Qoldiqsiz(n) {
 	var soni = 0;
 
 	for (let j = 1225; j <= 10000; j += 1225) {
@@ -155,7 +155,7 @@ function Qoldiqsiz(n) {
 	console.log("1225 ga bo'lidadigan sonlar: ", soni);
 }
 Qoldiqsiz(3);
-
+ */
 // 4-masala:
 
 /* var number = +prompt("oxirgi raqamini kiriting:");
@@ -197,3 +197,30 @@ console.log("min element:", maxElement);
 /* function numberToWord(number) {}
 numberToWord(number);
  */
+const text = "3 boshli aj4darho";
+
+function numberToText(text) {
+	const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+	const numbersText = [
+		"nol",
+		"bir",
+		"ikki",
+		"uch",
+		"to'rt",
+		"besh",
+		"olti",
+		"yetti",
+		"sakkiz",
+		"to'qqiz",
+	];
+
+	for (let i = 0; i < text.length; i++) {
+		if (numbers.includes(text[i])) {
+			text = text.replace(text[i], numbersText[parseInt(text[i])]);
+		}
+	}
+
+	console.log(text);
+}
+
+numberToText(text);
